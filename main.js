@@ -102,25 +102,21 @@ function genColorNearpure(pureColor) {
 
 //マウスの動きに合わせる為のやーつ
 
-// マウス座標の初期化
 let syoki = true;
 let mouseDown = syoki;
 let mouseX = 0;
 let mouseY = 0;
 
-// マウスダウンイベントの処理
 document.body.addEventListener("mousedown", (event) => {
   mouseDown = true;
   mouseX = event.clientX;
   mouseY = event.clientY;
 });
 
-// マウスアップイベントの処理
 document.body.addEventListener("mouseup", () => {
   mouseDown = syoki;
 });
 
-// マウスムーブイベントの処理
 document.body.addEventListener("mousemove", (event) => {
   if (mouseDown) {
     const deltaX = event.clientX - mouseX;
