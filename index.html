@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>春のProgrammingコンテスト大会</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="config">
+        Number 
+        <button id="delete" onclick="location.reload();">↺</button>  
+        <button id="delete" onclick="document.getElementById('config').style.display = 'none'; document.getElementById('fpss').style.display = 'none';">X</button> 
+        <input type="number" id="num" value="10000" onchange="NumberChange(this.value);">
+    </div>
+
+    <div id="fpss">
+        FPS: <span id="fps">XX</span>
+    </div>
+
+    <style>
+        #config {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: auto;
+            background-color: hsla(0, 0%, 0%, 0.5);
+            border-radius: 0 0 5px 0;
+            z-index: 1999;
+            color: #fff;
+            padding: 5px;
+        }
+
+        input {
+            width: 140px;
+        }
+
+        #delete {
+            float: right;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        #num {
+            border-radius: 5px;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        #fpss {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            color: #fff;
+        }
+    </style>
+
+    <script src="runtime.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
