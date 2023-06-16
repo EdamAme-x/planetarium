@@ -14,4 +14,4 @@
 左上の数を弄ることで球の数を変化させられます。  
 暴走を防ぐため、1 <= n <= 10000 です。  
 
-[Site url](https://edamame-x.github.io/planetarium/)
+[Site url](https://edamame-x.github.io/planetarium/) https://edamame-x.github.io/planetarium/
